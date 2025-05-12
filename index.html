@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="quiz-cont">
+    <div class="start-cont" style="display: flex; flex-direction: column;">
+      <h1>Welcome to the Quiz App</h1>
+      <button style="border: none;cursor: pointer;padding: 5px; border-radius: 10px;" id="startBut">START QUIZ</button>
+    </div>
+    <div class="quiz-box" style="display: none;">
+      <h1 id="qNo"></h1>
+      <p class="question-text">Some question goes here...</p>
+      <div id="opt-container"></div> <!-- Fixed ID reference -->
+    </div>
+    <div class="result"  style="display: none;">
+      <p id="score"></p>
+      <button class="nav-btn" id="restart">Restart Quiz</button>
+    </div>
+    <div class="nav-buttons" style="display: none;">
+      <button class="nav-btn" id="prev">« Prev</button>
+      <button class="nav-btn" id="next">Next »</button>
+    </div>
+  </div>
+  <button id="toggle-theme" style="position: fixed; top: 20px; right: 20px; z-index: 1000; padding: 10px; border-radius: 5px; border: none; cursor: pointer;">🌙 Toggle Theme</button>
+
+</body>
+<script src="script.js"></script>
+</html>
